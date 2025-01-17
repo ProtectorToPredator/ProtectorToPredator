@@ -170,7 +170,7 @@ For statistic information leakage, we have created parsing scripts to explicitly
 
   You can perform authorization in StealthDB. If an authorized party is granted `SELECT` permission, they can perform a smuggle attack without needing to invoke encryption functions (without the key).
 
-  ![image-20250117085652130](英文版.assets/grant.png)
+  ![image-20250117085652130](docs/png/grant.png)
 
   ## Log Leakage
 
