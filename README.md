@@ -166,19 +166,26 @@ For statistic information leakage, we have created parsing scripts to explicitly
           —— Histogram bounds: {l9g9v9VzlLQfKfkizLwmq2XVjjy8OZvRHBPRRYOSpsX=,ocDlW2uMcmFtZYCLs4YuJ+qI6BfW8PfyaVzx2T0aFmb=}
   ```
 
-  ## Grant Misuse
 
-  You can perform authorization in StealthDB. If an authorized party is granted `SELECT` permission, they can perform a smuggle attack without needing to invoke encryption functions (without the key).
+### Grant Misuse
 
-  ![image-20250117085652130](docs/png/grant.png)
+You can perform authorization in StealthDB. If an authorized party is granted `SELECT` permission, they can perform a smuggle attack without needing to invoke encryption functions (without the key).
 
-  ## Log Leakage
+![image-20250117085652130](docs/png/grant.png)
 
-  In the default configuration of StealthDB, certain erroneous SQL statements are logged. The MDBA can collect these erroneous statements over time to extract the plaintext data. Common errors include:
+### Log Leakage
 
-  - **Syntax Errors**: For example, writing `melect` instead of `select`.
-  - **Data Type Errors**: For example, comparing text and numbers.
-  - **Calculation Errors**: For example, `quantity=2/0`.
-  - **Reference Errors**: For example, referencing a non-existent table.
-  - **Permission Errors**: For example, connecting to the database but lacking `SELECT` permission, yet attempting to execute `SELECT`.
-  - …………
+In the default configuration of StealthDB, certain erroneous SQL statements are logged. The MDBA can collect these erroneous statements over time to extract the plaintext data. Common errors include:
+
+- **Syntax Errors**: For example, writing `melect` instead of `select`.
+- **Data Type Errors**: For example, comparing text and numbers.
+- **Calculation Errors**: For example, `quantity=2/0`.
+- **Reference Errors**: For example, referencing a non-existent table.
+- **Permission Errors**: For example, connecting to the database but lacking `SELECT` permission, yet attempting to execute `SELECT`.
+- …………
+
+## Acknowledgements
+
+- We would like to express our sincere gratitude to [StealthDB](https://github.com/cryptograph/stealthdb) for providing a powerful platform that significantly aided our research and experiments.
+- [Smuggle Attack]([Encrypted Databases Made Secure Yet Maintainable | USENIX](https://www.usenix.org/conference/osdi23/presentation/li-mingyu)) provides  theoretical support for some of our  findings.
+
