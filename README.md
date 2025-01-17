@@ -187,5 +187,5 @@ In the default configuration of StealthDB, certain erroneous SQL statements are 
 ## Acknowledgements
 
 - We would like to express our sincere gratitude to [StealthDB](https://github.com/cryptograph/stealthdb) for providing a powerful platform that significantly aided our research and experiments.
-- [Smuggle Attack](https://www.usenix.org/conference/osdi23/presentation/li-mingyu)) provides  theoretical support for some of our  findings.
+- [Smuggle Attack](https://www.usenix.org/conference/osdi23/presentation/li-mingyu) provides  theoretical support for some of our  findings.
 
