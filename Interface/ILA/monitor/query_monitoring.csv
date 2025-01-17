@@ -1,0 +1,2 @@
+User,SQL Query,Rows Affected,Percentage Change
+john,"select pg_sleep(0.1) ,* from fruit where quantity=pg_enc_int4_encrypt(2);",1,11.11111111111111

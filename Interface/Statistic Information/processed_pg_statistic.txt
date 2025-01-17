@@ -1,0 +1,21 @@
+attr1:
+    ——stanullfrac=0.0
+    —— Unique value rate: Estimated: 100.00% of total rows
+    —— Unique value count: 12.0
+    —— stakind=2
+        —— Histogram bounds: {1,2,3,4,5,6,7,8,9,10,11,12}
+attr2:
+    ——stanullfrac=0.0
+    —— Unique value rate: Estimated: 100.00% of total rows
+    —— Unique value count: 12.0
+    —— stakind=2
+        —— Histogram bounds: {Apple,Banana,Cherry,Grape,Kiwi,Mango,Orange,Peach,Pear,Pineapple,Strawberry,Watermelon}
+attr3:
+    ——stanullfrac=0.0
+    —— Unique value rate: Estimated: 75.00% of total rows
+    —— Unique value count: 9.0
+    —— stakind1=1
+        —— Most common values: {l9g9v9VzlLQfKfkizLwmq2XVjjy8OZvRHBPRRYOSpsX=,ocDlW2uMcmFtZYCLs4YuJ+qI6BfW8PfyaVzx2T0aFmb=}
+        —— Frequencies: [0.25, 0.166667]
+    —— stakind=2
+        —— Histogram bounds: {l9g9v9VzlLQfKfkizLwmq2XVjjy8OZvRHBPRRYOSpsX=,ocDlW2uMcmFtZYCLs4YuJ+qI6BfW8PfyaVzx2T0aFmb=}
